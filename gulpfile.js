@@ -36,6 +36,7 @@ var JAVASCRIPT_SRC = [
     'src/js/templates.js',
   ],
   CSS_SRC = "src/css/*.scss",
+  FONTS_SRC = "src/fonts/**/*",
   IMAGE_SRC = "src/images/**/*",
 
   JAVASCRIPT_DEST = "dist",
@@ -69,6 +70,11 @@ gulp.task('images', function () {
     .pipe(gulp.dest('dist/images'));
 });
 
+gulp.task('fonts', function () {
+  gulp.src(FONTS_SRC)
+    .pipe(gulp.dest('dist/fonts'));
+});
+
 gulp.task('watch', function(){  
   gulp.watch(IMAGE_SRC, ['images']); 
   gulp.watch(JAVASCRIPT_SRC, ['scripts']);
@@ -81,4 +87,4 @@ gulp.task('webserver', function() {
   });
 });
  
-gulp.task('default', ['watch', 'styles', 'images', 'scripts', 'webserver']);
+gulp.task('default', ['watch', 'styles', 'images', 'fonts', 'scripts', 'webserver']);
