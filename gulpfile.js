@@ -66,7 +66,7 @@ gulp.task('styles', function(){
 
 gulp.task('images', function () {
   gulp.src(IMAGE_SRC)
-    .pipe(gulp.dest('dist/presentation_images'));
+    .pipe(gulp.dest('dist/images'));
 });
 
 gulp.task('watch', function(){  
