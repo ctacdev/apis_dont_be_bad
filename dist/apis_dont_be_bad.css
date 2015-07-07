@@ -198,17 +198,15 @@ body {
 #big {
   width: 600px;
   text-align: center;
-  font-size: 60px;
+  font-size: 30px;
   line-height: 1; }
 
 #big b {
   display: block;
-  font-size: 250px;
-  line-height: 250px; }
+  font-size: 70px; }
 
 #big .thoughts {
-  font-size: 90px;
-  line-height: 150px; }
+  font-size: 50px; }
 
 /* tiny ideas */
 #tiny {
@@ -216,7 +214,7 @@ body {
   text-align: center; }
 
 #ing {
-  width: 500px; }
+  font-size: 60px; }
 
 #ing b {
   display: inline-block;
